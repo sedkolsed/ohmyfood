@@ -4,8 +4,19 @@
   box-sizing: border-box;
 }
 
-p {
-  font-family: "Shrikhand", cursive;
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.header {
+  border: 1px red solid;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.header img {
+  height: 32px;
 }
 
 /*# sourceMappingURL=style.css.map */
