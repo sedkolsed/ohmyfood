@@ -8,3 +8,30 @@
 .header img {
     height: 32px;
 }
+
+.footer h3 {
+    font-family: 'Shrikhand', cursive;
+    color: white;
+    padding-top: 20px;
+    padding-left: 25px;
+}
+
+.footer {
+    background-color: $colour-footer;
+    padding-bottom: 10px;
+}
+
+.footer li {
+    color: white;
+    margin-left: -15px;
+    padding-bottom: 5px;
+    list-style: none;
+}
+
+.fa-utensils {
+    margin-right: 10px;
+}
+
+.fa-handshake-angle {
+    margin-right: 4px;
+}
