@@ -54,10 +54,6 @@ a {
   object-fit: cover;
 }
 
-.section1 {
-  height: 400px;
-}
-
 .divlocation {
   height: 50px;
   background-color: #eaeaea;
@@ -68,16 +64,24 @@ a {
 .divlocation .local {
   font-weight: 500;
 }
-
-.fa-location-dot {
+.divlocation .fa-location-dot {
   position: absolute;
   padding-right: 150px;
   padding-bottom: 5px;
 }
 
 .divdescription {
-  height: 350px;
   background-color: #f6f6f6;
+  text-align: center;
+}
+.divdescription h1 {
+  margin-top: 0px;
+  padding: 1.5em 2em 0 2em;
+  font-size: 1.5em;
+}
+.divdescription p {
+  padding: 0em 2em 0em 2em;
+  font-weight: 300;
 }
 
 .footer {
