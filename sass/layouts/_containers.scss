@@ -3,3 +3,31 @@
     width: 100%;
     object-fit: cover;
 }
+
+.section1 {
+    // border: 2px blue solid;
+    height: 400px;
+}
+
+.divlocation {
+    height: 50px;
+    background-color: $colour-grey1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // position: relative;
+    .local {
+        font-weight: 500;
+    }
+}
+
+.fa-location-dot {
+    position: absolute;
+    padding-right: 150px;
+    padding-bottom: 5px;
+}
+
+.divdescription {
+    height: 350px;
+    background-color: $colour-grey2;
+}

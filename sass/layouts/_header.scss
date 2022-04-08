@@ -1,5 +1,4 @@
 .header {
-    border: 1px red solid;
     padding-top: 20px;
     padding-bottom: 15px;
     text-align: center;
@@ -7,6 +6,7 @@
     display: flex;
     flex-wrap: nowrap;
     position: relative;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .25);
 }
 
 .divarrow {
@@ -21,31 +21,4 @@
 .fa-arrow-left {
     font-size: x-large;
     padding-left: 25px;
-}
-
-.footer h3 {
-    font-family: 'Shrikhand', cursive;
-    color: white;
-    padding-top: 20px;
-    padding-left: 25px;
-}
-
-.footer {
-    background-color: $colour-footer;
-    padding-bottom: 10px;
-}
-
-.footer li {
-    color: white;
-    margin-left: -15px;
-    padding-bottom: 5px;
-    list-style: none;
-}
-
-.fa-utensils {
-    margin-right: 10px;
-}
-
-.fa-handshake-angle {
-    margin-right: 4px;
 }
