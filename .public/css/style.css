@@ -23,6 +23,24 @@ a {
   height: 100px;
 }
 
+.btnpink {
+  background-image: linear-gradient(170deg, #ff79da, #9356dc);
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 1.5rem;
+  box-shadow: 0.1rem 0.1rem 5px gray;
+  transition: all 150ms;
+  cursor: pointer;
+}
+.btnpink:hover {
+  opacity: 0.9;
+  box-shadow: 0.25rem 0.25rem 10px black;
+}
+
 .header {
   padding-top: 20px;
   padding-bottom: 15px;
