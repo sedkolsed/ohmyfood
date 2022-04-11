@@ -11,13 +11,13 @@ a {
     text-decoration: none;
 }
 
-// .section1 {
-//     border: 2px blue solid;
-//     height: 100px;
-// }
 .section2 {
-    border: 2px rgb(0, 255, 85) solid;
-    height: 100px;
+    margin-left: -10px;
+    padding-right: 25px;
+    padding-bottom: 40px;
+    h2 {
+        margin: 3rem 0rem 2rem 2rem;
+    }
 }
 
 .section3 {

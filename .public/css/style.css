@@ -14,8 +14,12 @@ a {
 }
 
 .section2 {
-  border: 2px rgb(0, 255, 85) solid;
-  height: 100px;
+  margin-left: -10px;
+  padding-right: 25px;
+  padding-bottom: 40px;
+}
+.section2 h2 {
+  margin: 3rem 0rem 2rem 2rem;
 }
 
 .section3 {
@@ -32,13 +36,63 @@ a {
   border: none;
   margin-top: 1rem;
   border-radius: 1.5rem;
-  box-shadow: 0.1rem 0.1rem 5px gray;
   transition: all 150ms;
   cursor: pointer;
+  box-shadow: 7px 7px 14px -10px #000000;
 }
 .btnpink:hover {
   opacity: 0.9;
-  box-shadow: 0.25rem 0.25rem 10px black;
+  box-shadow: 0.25rem 0.25rem 10px rgb(114, 109, 109);
+}
+
+.explain {
+  counter-reset: steps;
+}
+.explain ol {
+  display: flex;
+  gap: 1.5rem;
+}
+@media (max-width: 880px) {
+  .explain ol {
+    flex-direction: column;
+  }
+}
+.explain ol li {
+  list-style-type: none;
+  font-weight: 600;
+  background-color: #f6f6f6;
+  flex-grow: 1;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  position: relative;
+  transition: all 150ms;
+  box-shadow: 7px 7px 14px -10px #000000;
+}
+.explain ol li::before {
+  content: counter(steps);
+  counter-increment: steps;
+  color: white;
+  background-color: #9356dc;
+  display: grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 1.4rem;
+  left: -0.7rem;
+}
+.explain ol li:hover {
+  background-color: #f4ebff;
+  box-shadow: 0.25rem 0.25rem 10px rgb(114, 109, 109);
+}
+.explain ol li:hover i {
+  color: #9356dc;
+}
+.explain ol li i {
+  color: gray;
+  padding-right: 1rem;
+  font-size: 1.2rem;
 }
 
 .header {
@@ -91,6 +145,7 @@ a {
 .divdescription {
   background-color: #f6f6f6;
   text-align: center;
+  padding-bottom: 50px;
 }
 .divdescription h1 {
   margin-top: 0px;

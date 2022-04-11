@@ -7,11 +7,59 @@
     border: none;
     margin-top: 1rem;
     border-radius: 1.5rem;
-    box-shadow: .1rem .1rem 5px gray;
     transition: all 150ms;
     cursor: pointer;
+    @include shadow1;
     &:hover {
         opacity: 0.9;
-        box-shadow: .25rem .25rem 10px black;
+        @include shadow2;
+    }
+}
+
+.explain {
+    counter-reset: steps;
+    ol {
+        display: flex;
+        @media (max-width: 880px) {
+            flex-direction: column;
+        }
+        gap: 1.5rem;
+        li {
+            list-style-type: none;
+            font-weight: 600;
+            background-color: $colour-grey2;
+            flex-grow: 1;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            position: relative;
+            transition: all 150ms;
+            &::before {
+                content: counter(steps);
+                counter-increment: steps;
+                color: white;
+                background-color: $colour-primary;
+                display: grid;
+                place-items: center;
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 50%;
+                position: absolute;
+                bottom: 1.4rem;
+                left: -0.7rem;
+            }
+            @include shadow1;
+            &:hover {
+                background-color: $colour-primarylight;
+                @include shadow2;
+                i {
+                    color: $colour-primary;
+                }
+            }
+            i {
+                color: gray;
+                padding-right: 1rem;
+                font-size: 1.2rem;
+            }
+        }
     }
 }
