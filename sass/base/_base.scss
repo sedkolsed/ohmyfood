@@ -22,5 +22,13 @@ a {
 
 .section3 {
     border: 2px rgb(255, 153, 0) solid;
-    height: 100px;
+    background-color: $colour-grey2;
+    // height: 100px;
+    h2 {
+        margin: 3rem 0rem 2rem 1.5rem;
+    }
+}
+
+.indexcard {
+    // border: 1px rgb(19, 1, 1) solid;
 }

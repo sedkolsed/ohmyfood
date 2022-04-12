@@ -24,7 +24,10 @@ a {
 
 .section3 {
   border: 2px rgb(255, 153, 0) solid;
-  height: 100px;
+  background-color: #f6f6f6;
+}
+.section3 h2 {
+  margin: 3rem 0rem 2rem 1.5rem;
 }
 
 .btnpink {
@@ -155,6 +158,45 @@ a {
 .divdescription p {
   padding: 0em 2em 0em 2em;
   font-weight: 300;
+}
+
+.restaurants {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0rem 1.5rem 2rem 1.5rem;
+  border: 1px red solid;
+}
+.restaurants a {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 15rem;
+}
+.restaurants .indexcard {
+  flex-grow: 1;
+  background-color: white;
+  min-width: 10rem;
+  border-radius: 1rem;
+  transition: all 150ms;
+  box-shadow: 7px 7px 14px -10px #000000;
+}
+.restaurants .indexcard:hover {
+  opacity: 0.9;
+  box-shadow: 0.25rem 0.25rem 10px rgb(114, 109, 109);
+}
+.restaurants .indexcard h3 {
+  margin: 0.5rem 0 0.5rem 1rem;
+}
+.restaurants .indexcard p {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  font-weight: 300;
+}
+.restaurants .indexcard img {
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+  width: 100%;
+  height: 9rem;
 }
 
 .footer {

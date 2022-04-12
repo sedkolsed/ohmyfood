@@ -35,3 +35,45 @@
         font-weight: 300;
     }
 }
+
+.restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0rem 1.5rem 2rem 1.5rem;
+    border: 1px red solid;
+    // @media (max-width: 880px) {
+    //     flex-direction: column;
+    // }
+    a {
+        display: flex;
+        flex-grow: 1;
+        flex-basis: 15rem;
+    }
+    .indexcard {
+        flex-grow: 1;
+        background-color: white;
+        min-width: 10rem;
+        border-radius: 1rem;
+        transition: all 150ms;
+        @include shadow1;
+        &:hover {
+            opacity: 0.9;
+            @include shadow2;
+        }
+        h3 {
+            margin: 0.5rem 0 0.5rem 1rem;
+        }
+        p {
+            margin-top: 0.5rem;
+            margin-left: 1rem;
+            font-weight: 300;
+        }
+        img {
+            border-radius: 1rem 1rem 0 0;
+            object-fit: cover;
+            width: 100%;
+            height: 9rem;
+        }
+    }
+}
