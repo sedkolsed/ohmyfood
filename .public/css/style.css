@@ -188,11 +188,27 @@ a {
 .restaurants .heart {
   position: relative;
 }
-.restaurants i {
+.restaurants .fa-solid {
   position: absolute;
   bottom: 2rem;
   right: 1rem;
-  font-size: larger;
+  font-size: 1.5rem;
+  color: transparent;
+  transition: all 200ms;
+  background-image: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+}
+.restaurants .fa-solid:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.restaurants .fa-regular {
+  position: absolute;
+  bottom: 2rem;
+  right: 1rem;
+  font-size: 1.5rem;
   color: black;
 }
 .restaurants a {
