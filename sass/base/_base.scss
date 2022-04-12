@@ -21,11 +21,13 @@ a {
 }
 
 .section3 {
-    border: 2px rgb(255, 153, 0) solid;
+    // border: 2px rgb(255, 153, 0) solid;
     background-color: $colour-grey2;
+    padding-bottom: 2rem;
     // height: 100px;
     h2 {
         margin: 3rem 0rem 2rem 1.5rem;
+        padding-top: 2rem;
     }
 }
 
