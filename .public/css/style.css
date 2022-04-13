@@ -36,7 +36,7 @@ a {
   color: white;
   font-weight: 400;
   font-size: 1rem;
-  padding: 1rem 1.5rem 1rem 1.5rem;
+  padding: 1rem 2rem 1rem 2rem;
   border: none;
   margin-top: 1rem;
   border-radius: 1.5rem;
@@ -45,6 +45,24 @@ a {
   box-shadow: 7px 7px 14px -10px #000000;
 }
 .btnpink:hover {
+  opacity: 0.9;
+  box-shadow: 0.25rem 0.25rem 10px rgb(114, 109, 109);
+}
+
+.btnpink2 {
+  background-image: linear-gradient(170deg, #ff79da, #9356dc);
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 1rem 3rem 1rem 3rem;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 1.5rem;
+  transition: all 150ms;
+  cursor: pointer;
+  box-shadow: 7px 7px 14px -10px #000000;
+}
+.btnpink2:hover {
   opacity: 0.9;
   box-shadow: 0.25rem 0.25rem 10px rgb(114, 109, 109);
 }
@@ -188,7 +206,7 @@ a {
   right: 1rem;
   font-size: 1.5rem;
   color: transparent;
-  transition: all 200ms;
+  transition: all 500ms;
   background-image: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
@@ -274,7 +292,7 @@ a {
   flex-direction: column;
   background-color: #f6f6f6;
   border-radius: 1.5rem 1.5rem 0 0;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   margin-top: -2rem;
 }
 
@@ -294,7 +312,7 @@ a {
   right: 1.5rem;
   font-size: 1.5rem;
   color: transparent;
-  transition: all 200ms;
+  transition: all 500ms;
   background-image: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
@@ -303,6 +321,7 @@ a {
 .head_menu .fa-solid:hover {
   opacity: 1;
   transform: scale(1.05);
+  cursor: pointer;
 }
 .head_menu .fa-regular {
   position: absolute;
@@ -316,10 +335,9 @@ a {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: repeat(3, 1fr);
-  border: 1px red solid;
   padding-top: 1rem;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 @media (max-width: 780px) {
   .menu-selection {
@@ -329,6 +347,13 @@ a {
 .menu-selection h2 {
   font-size: medium;
   font-weight: 400;
+  padding-left: 1rem;
+}
+.menu-selection .green-line {
+  color: #99e2d0;
+  font-size: 3rem;
+  padding-left: 1rem;
+  margin-top: -50px;
 }
 
 .starter,
@@ -338,7 +363,7 @@ a {
 }
 
 .menu-element {
-  margin: 0 5px 5px 5px;
+  margin: 1rem 10px 10px 10px;
   background-color: white;
   border-radius: 1rem;
   display: flex;
@@ -355,7 +380,7 @@ a {
 }
 .menu-element .menu-description p {
   padding-left: 1rem;
-  margin-top: 10px;
+  margin-top: 14px;
   font-weight: 300;
   overflow: hidden;
   white-space: nowrap;
@@ -393,9 +418,16 @@ a {
   animation: check_turn 0.5s ease-in-out;
 }
 
+.command {
+  background-color: #f6f6f6;
+  display: grid;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
 @keyframes check_turn {
   0% {
-    transform: rotate(-250deg);
+    transform: rotate(-360deg);
   }
   100% {
     transform: rotate(0);
