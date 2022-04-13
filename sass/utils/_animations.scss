@@ -1,0 +1,8 @@
+@keyframes check_turn {
+    0% {
+        transform: rotate(-250deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}

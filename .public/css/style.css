@@ -331,22 +331,35 @@ a {
   font-weight: 400;
 }
 
-.menu-element {
-  background-color: white;
-  border-radius: 1rem;
-  box-shadow: 1px 1px 11px -4px #000;
-  display: flex;
+.starter,
+.dish,
+.dessert {
   overflow: hidden;
 }
-.menu-element h4 {
+
+.menu-element {
+  margin: 0 5px 5px 5px;
+  background-color: white;
+  border-radius: 1rem;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 1px 1px 11px -4px #000;
+}
+.menu-element .menu-description {
+  overflow: hidden;
+}
+.menu-element .menu-description h4 {
   padding: 1rem 0 0 1rem;
   margin-top: 0;
   margin-bottom: 0;
 }
-.menu-element p {
+.menu-element .menu-description p {
   padding-left: 1rem;
   margin-top: 10px;
   font-weight: 300;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu-element .price-description {
   margin-left: auto;
@@ -375,6 +388,18 @@ a {
 }
 .menu-element:hover .check-box {
   margin-right: 0;
+}
+.menu-element:hover .check-box i {
+  animation: check_turn 0.5s ease-in-out;
+}
+
+@keyframes check_turn {
+  0% {
+    transform: rotate(-250deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
