@@ -124,12 +124,6 @@ a {
   padding-left: 25px;
 }
 
-.section1img img {
-  height: 250px;
-  width: 100%;
-  object-fit: cover;
-}
-
 .divlocation {
   height: 50px;
   background-color: #eaeaea;
@@ -266,6 +260,60 @@ a {
 
 .fa-handshake-angle {
   margin-right: 4px;
+}
+
+.section1img img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sectionmenu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  border-radius: 1.5rem 1.5rem 0 0;
+  padding-bottom: 40px;
+  margin-top: -2rem;
+}
+
+.head_menu {
+  position: relative;
+  display: flex;
+}
+.head_menu h1 {
+  font-family: "Shrikhand", cursive;
+  padding-top: 0.5rem;
+  padding-left: 25px;
+  font-size: 1.5rem;
+}
+.head_menu .fa-solid {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: transparent;
+  transition: all 200ms;
+  background-image: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+}
+.head_menu .fa-solid:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.head_menu .fa-regular {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.menu {
+  border: 1px red solid;
 }
 
 /*# sourceMappingURL=style.css.map */
