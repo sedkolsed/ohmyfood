@@ -312,8 +312,69 @@ a {
   color: black;
 }
 
-.menu {
+.menu-selection {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
   border: 1px red solid;
+  padding-top: 1rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (max-width: 780px) {
+  .menu-selection {
+    grid-template-columns: 1fr;
+  }
+}
+.menu-selection h2 {
+  font-size: medium;
+  font-weight: 400;
+}
+
+.menu-element {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 11px -4px #000;
+  display: flex;
+  overflow: hidden;
+}
+.menu-element h4 {
+  padding: 1rem 0 0 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.menu-element p {
+  padding-left: 1rem;
+  margin-top: 10px;
+  font-weight: 300;
+}
+.menu-element .price-description {
+  margin-left: auto;
+  padding-top: 2.1rem;
+  padding-right: 1rem;
+}
+.menu-element .price-description p {
+  font-weight: bold;
+}
+.menu-element .check-box {
+  background-color: #99e2d0;
+  border-radius: 0 1rem 1rem 0;
+  width: 4rem;
+  margin-right: -4rem;
+  transition: all 400ms;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+.menu-element .check-box i {
+  background-color: white;
+  border-radius: 50%;
+  font-size: larger;
+  padding: 0.1rem;
+  color: #99e2d0;
+}
+.menu-element:hover .check-box {
+  margin-right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
