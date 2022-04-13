@@ -86,6 +86,7 @@
         border-radius: 1rem;
         display: flex;
         overflow: hidden;
+        cursor: pointer;
         @include shadow3;
         .menu-description {
             overflow: hidden;
@@ -120,7 +121,6 @@
             width: 4.5rem;
             margin-right: -4.5rem;
             transition: all 400ms;
-            cursor: pointer;
             display: grid;
             place-items: center;
             i {

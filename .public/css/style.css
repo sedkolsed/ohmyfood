@@ -368,7 +368,8 @@ a {
   border-radius: 1rem;
   display: flex;
   overflow: hidden;
-  box-shadow: 1px 1px 11px -4px #000;
+  cursor: pointer;
+  box-shadow: 1px 1px 11px -4px rgb(119, 114, 114);
 }
 .menu-element .menu-description {
   overflow: hidden;
@@ -403,7 +404,6 @@ a {
   width: 4.5rem;
   margin-right: -4.5rem;
   transition: all 400ms;
-  cursor: pointer;
   display: grid;
   place-items: center;
 }
