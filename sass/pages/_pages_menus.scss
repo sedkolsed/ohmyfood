@@ -93,6 +93,9 @@
                 padding: 1rem 0 0 1rem;
                 margin-top: 0;
                 margin-bottom: 0;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
             }
             p {
                 padding-left: 1rem;
@@ -114,8 +117,8 @@
         .check-box {
             background-color: $colour-tertiary;
             border-radius: 0 1rem 1rem 0;
-            width: 4rem;
-            margin-right: -4rem;
+            width: 4.5rem;
+            margin-right: -4.5rem;
             transition: all 400ms;
             cursor: pointer;
             display: grid;
