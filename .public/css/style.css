@@ -353,6 +353,7 @@ a {
 @media (min-width: 780px) {
   .head_menu h1 {
     font-size: 2rem;
+    padding-left: 0;
   }
 }
 .head_menu .fa-solid {
