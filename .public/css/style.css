@@ -19,10 +19,26 @@ a {
   height: 100vh;
   z-index: 1;
   background-color: #fff;
-  opacity: 0.8;
+  opacity: 0.9;
   animation: load-fade-out 1s;
   animation-delay: 3s;
   animation-fill-mode: forwards;
+  display: grid;
+  place-items: center;
+}
+.loader .load {
+  width: 30vh;
+  height: 22.5vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.loader .load__bar {
+  background-image: linear-gradient(#9356dc, #ff79da);
+  height: 100%;
+  border-radius: 50%;
+  width: 3vh;
+  animation: bars 1s backwards infinite;
+  animation-direction: alternate;
 }
 
 .section2 {
@@ -491,10 +507,19 @@ a {
 }
 @keyframes load-fade-out {
   0% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
   100% {
     opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes bars {
+  0% {
+    transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(1.5);
   }
 }
 
