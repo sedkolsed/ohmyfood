@@ -13,6 +13,18 @@ a {
   text-decoration: none;
 }
 
+.loader {
+  inset: 0;
+  position: fixed;
+  height: 100vh;
+  z-index: 1;
+  background-color: #fff;
+  opacity: 0.8;
+  animation: load-fade-out 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
 .section2 {
   margin-left: -10px;
   padding-right: 25px;
@@ -475,6 +487,14 @@ a {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes load-fade-out {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
