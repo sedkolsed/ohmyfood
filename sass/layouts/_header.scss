@@ -7,18 +7,15 @@
     flex-wrap: nowrap;
     position: relative;
     box-shadow: 0 0 .5rem rgba(0, 0, 0, .25);
-}
-
-.divarrow {
-    position: absolute;
-    margin-right: 90%;
-}
-
-.header img {
-    height: 32px;
-}
-
-.fa-arrow-left {
-    font-size: x-large;
-    padding-left: 25px;
+    img {
+        height: 32px;
+    }
+    .divarrow {
+        position: absolute;
+        margin-right: 90%;
+    }
+    .fa-arrow-left {
+        font-size: x-large;
+        padding-left: 25px;
+    }
 }
