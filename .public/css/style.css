@@ -370,6 +370,38 @@ a {
   overflow: hidden;
   cursor: pointer;
   box-shadow: 1px 1px 11px -4px rgb(119, 114, 114);
+  animation: appear 1s ease-in-out;
+  animation-fill-mode: both;
+}
+.menu-element:nth-child(1) {
+  animation-delay: 150ms;
+}
+.menu-element:nth-child(2) {
+  animation-delay: 300ms;
+}
+.menu-element:nth-child(3) {
+  animation-delay: 450ms;
+}
+.menu-element:nth-child(4) {
+  animation-delay: 600ms;
+}
+.menu-element:nth-child(5) {
+  animation-delay: 750ms;
+}
+.menu-element:nth-child(6) {
+  animation-delay: 900ms;
+}
+.menu-element:nth-child(7) {
+  animation-delay: 1050ms;
+}
+.menu-element:nth-child(8) {
+  animation-delay: 1200ms;
+}
+.menu-element:nth-child(9) {
+  animation-delay: 1350ms;
+}
+.menu-element:nth-child(10) {
+  animation-delay: 1500ms;
 }
 .menu-element .menu-description {
   overflow: hidden;
@@ -434,6 +466,15 @@ a {
   }
   100% {
     transform: rotate(0);
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  100% {
+    opacity: 1;
   }
 }
 

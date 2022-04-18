@@ -88,6 +88,13 @@
         overflow: hidden;
         cursor: pointer;
         @include shadow3;
+        animation: appear 1s ease-in-out;
+        animation-fill-mode: both;
+        @for $it from 1 through 10 {
+            &:nth-child(#{$it}) {
+                animation-delay: 150ms*$it;
+            }
+        }
         .menu-description {
             overflow: hidden;
             h4 {
