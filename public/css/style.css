@@ -46,6 +46,12 @@ a {
   padding-right: 25px;
   padding-bottom: 10px;
 }
+@media (min-width: 780px) {
+  .section2 {
+    padding-right: 65px;
+    padding-left: 45px;
+  }
+}
 .section2 h2 {
   margin: 3rem 0rem 2rem 2rem;
 }
@@ -108,7 +114,7 @@ a {
   display: flex;
   gap: 1.5rem;
 }
-@media (max-width: 880px) {
+@media (max-width: 960px) {
   .explain ol {
     flex-direction: column;
   }

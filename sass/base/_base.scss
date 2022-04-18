@@ -43,6 +43,10 @@ a {
     margin-left: -10px;
     padding-right: 25px;
     padding-bottom: 10px;
+    @media (min-width: 780px) {
+        padding-right: 65px;
+        padding-left: 45px;
+    }
     h2 {
         margin: 3rem 0rem 2rem 2rem;
     }

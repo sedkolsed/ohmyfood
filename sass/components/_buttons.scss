@@ -38,7 +38,7 @@
     counter-reset: steps;
     ol {
         display: flex;
-        @media (max-width: 880px) {
+        @media (max-width: 960px) {
             flex-direction: column;
         }
         gap: 1.5rem;
