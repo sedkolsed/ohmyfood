@@ -1,154 +1,162 @@
-    .section1img img {
-        height: 250px;
-        width: 100%;
-        object-fit: cover;
+.section1img img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sectionmenu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: $colour-grey2;
+    border-radius: 1.5rem 1.5rem 0 0;
+    padding-bottom: 20px;
+    margin-top: -2rem;
+}
+
+.head_menu {
+    position: relative;
+    display: flex;
+    @media (min-width: 780px) {
+        justify-content: center;
     }
-    
-    .sectionmenu {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        background-color: $colour-grey2;
-        border-radius: 1.5rem 1.5rem 0 0;
-        padding-bottom: 20px;
-        // padding-top: -3rem;
-        margin-top: -2rem;
-    }
-    
-    .head_menu {
-        position: relative;
-        display: flex;
-        h1 {
-            font-family: 'Shrikhand', cursive;
-            padding-top: 0.5rem;
-            padding-left: 25px;
-            font-size: 1.5rem;
-        }
-        .fa-solid {
-            position: absolute;
-            top: 1.6rem;
-            right: 1.5rem;
-            font-size: 1.5rem;
-            color: transparent;
-            transition: all 500ms;
-            background-image: linear-gradient( $colour-primary, $colour-secondary);
-            background-clip: text;
-            -webkit-background-clip: text;
-            opacity: 0;
-        }
-        .fa-solid:hover {
-            opacity: 1;
-            transform: scale(1.05);
-            cursor: pointer;
-        }
-        .fa-regular {
-            position: absolute;
-            top: 1.6rem;
-            right: 1.5rem;
-            font-size: 1.5rem;
-            color: black;
+    h1 {
+        font-family: 'Shrikhand', cursive;
+        padding-top: 0.5rem;
+        padding-left: 25px;
+        font-size: 1.5rem;
+        @media (min-width: 780px) {
+            font-size: 2rem;
         }
     }
-    
-    .menu-selection {
-        display: grid;
-        gap: 1.5rem;
-        grid-template-columns: repeat(3, 1fr);
-        // border: 1px red solid;
-        padding-top: 1rem;
+    .fa-solid {
+        position: absolute;
+        top: 1.6rem;
+        right: 1.5rem;
+        font-size: 1.5rem;
+        color: transparent;
+        transition: all 500ms;
+        background-image: linear-gradient( $colour-primary, $colour-secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
+    }
+    .fa-solid:hover {
+        opacity: 1;
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+    .fa-regular {
+        position: absolute;
+        top: 1.6rem;
+        right: 1.5rem;
+        font-size: 1.5rem;
+        color: black;
+    }
+}
+
+.menu-selection {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 1rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    @media (max-width: 780px) {
+        grid-template-columns: 1fr;
         padding-left: 8px;
         padding-right: 8px;
-        @media (max-width: 780px) {
-            grid-template-columns: 1fr;
-        }
-        h2 {
-            font-size: medium;
-            font-weight: 400;
-            padding-left: 1rem;
-        }
-        .green-line {
-            color: $colour-tertiary;
-            font-size: 3rem;
-            padding-left: 1rem;
-            margin-top: -50px;
+    }
+    h2 {
+        font-size: medium;
+        font-weight: 400;
+        padding-left: 1rem;
+    }
+    .green-line {
+        color: $colour-tertiary;
+        font-size: 3rem;
+        padding-left: 1rem;
+        margin-top: -50px;
+    }
+}
+
+.starter,
+.dish,
+.dessert {
+    overflow: hidden;
+}
+
+.menu-element {
+    margin: 1rem 10px 10px 10px;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+    @include shadow3;
+    animation: appear 1s ease-in-out;
+    animation-fill-mode: both;
+    @for $it from 1 through 6 {
+        &:nth-child(#{$it}) {
+            animation-delay: 150ms*$it;
         }
     }
-    
-    .starter,
-    .dish,
-    .dessert {
+    .menu-description {
         overflow: hidden;
-    }
-    
-    .menu-element {
-        margin: 1rem 10px 10px 10px;
-        background-color: white;
-        border-radius: 1rem;
-        display: flex;
-        overflow: hidden;
-        cursor: pointer;
-        @include shadow3;
-        animation: appear 1s ease-in-out;
-        animation-fill-mode: both;
-        @for $it from 1 through 10 {
-            &:nth-child(#{$it}) {
-                animation-delay: 150ms*$it;
-            }
-        }
-        .menu-description {
+        h4 {
+            padding: 1rem 0 0 1rem;
+            margin-top: 0;
+            margin-bottom: 0;
             overflow: hidden;
-            h4 {
-                padding: 1rem 0 0 1rem;
-                margin-top: 0;
-                margin-bottom: 0;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-            }
-            p {
-                padding-left: 1rem;
-                margin-top: 14px;
-                font-weight: 300;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-            }
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
-        .price-description {
-            margin-left: auto;
-            padding-top: 2.1rem;
-            padding-right: 1rem;
-            p {
-                font-weight: bold;
-            }
-        }
-        .check-box {
-            background-color: $colour-tertiary;
-            border-radius: 0 1rem 1rem 0;
-            width: 4.5rem;
-            margin-right: -4.5rem;
-            transition: all 400ms;
-            display: grid;
-            place-items: center;
-            i {
-                background-color: white;
-                border-radius: 50%;
-                font-size: larger;
-                padding: 0.1rem;
-                color: $colour-tertiary;
-            }
-        }
-        &:hover .check-box {
-            margin-right: 0;
-            i {
-                animation: check_turn 0.5s ease-in-out;
-            }
+        p {
+            padding-left: 1rem;
+            margin-top: 14px;
+            font-weight: 300;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
     }
-    
-    .command {
-        background-color: $colour-grey2;
+    .price-description {
+        margin-left: auto;
+        padding-top: 2.1rem;
+        padding-right: 1rem;
+        padding-left: 5px;
+        p {
+            font-weight: bold;
+        }
+    }
+    .check-box {
+        background-color: $colour-tertiary;
+        border-radius: 0 1rem 1rem 0;
+        min-width: 4.5rem;
+        margin-right: -4.5rem;
+        transition: all 400ms;
         display: grid;
-        justify-content: center;
-        padding-bottom: 60px;
+        place-items: center;
+        i {
+            background-color: white;
+            border-radius: 50%;
+            font-size: larger;
+            padding: 0.1rem;
+            color: $colour-tertiary;
+        }
     }
+    &:hover .check-box {
+        margin-right: 0;
+        min-width: 4.5rem;
+        i {
+            animation: check_turn 0.5s ease-in-out;
+        }
+    }
+}
+
+.command {
+    background-color: $colour-grey2;
+    display: grid;
+    justify-content: center;
+    padding-bottom: 60px;
+}

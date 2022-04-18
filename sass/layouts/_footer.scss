@@ -1,6 +1,9 @@
 .footer {
     background-color: $colour-footer;
     padding-bottom: 10px;
+    @media (min-width: 780px) {
+        padding-left: 40px;
+    }
     h3 {
         margin: inherit;
         font-family: 'Shrikhand', cursive;
